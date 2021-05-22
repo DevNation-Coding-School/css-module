@@ -1,0 +1,74 @@
+.grid-container {
+    display: grid;
+
+    /* 2-column layout */
+    grid-template-columns: 300px 200px ;
+
+    /* grid-template-columns: 2fr 1fr; */ 
+
+    /* similar to flex grow */
+    /* twice as long as the first column */
+    /* four columns 100px each */
+    /* grid-template-columns: repeat(4, 100px); */
+    
+    /* can do this with rows */
+    /* grid-template-rows: 200px 150px; */
+    /* 200px height for first row and 150px for second row */
+    /* grid-auto-rows: 150px; */
+
+    /* can define min-max side of the row */
+    grid-auto-rows: minmax(300px, auto);
+
+    /* spacing between each row*/
+    grid-row-gap: 20px; 
+
+    /* spacing between each column */
+    grid-column-gap: 10px;
+
+    /* create different areas */
+    /* grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content" */
+    /* ^ we are defining how each row will act with columns: reposition elements. Not used very often */
+
+
+    /* ALIGN ITEMS + CONTENTS */
+    justify-content: center; 
+    align-content: center;
+
+    /* justify items inside container (columns) */
+    justify-items: stretch;
+    /* align items = rows */
+    align-items: stretch;
+}
+
+.grid-item-1 {
+    /* grid-area: header */
+    grid-column-start: 1;
+    grid-column-end: -1;
+    /* ^ all the way to the very end of the column to the right side of the page */
+
+    /* shorthand */
+    grid-column: 1 / -1;
+
+    align-self: start;
+    justify-self: center;
+
+}
+
+.grid-item-2 {
+    /* grid-area: sidebar */
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    /* use span: rows will span 2 rows */
+    grid-row: span 1;
+
+}
+
+.grid-item-3 {
+    /* grid-area: content */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

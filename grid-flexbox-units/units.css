@@ -1,0 +1,47 @@
+/* body {
+    font-size: 30px;
+} */
+
+.box {
+    background: red;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.fifty-percent {
+    width: 50%
+}
+
+.one-hundred-pixels {
+    width: 100px;
+}
+
+.parent {
+    width: 150px;
+    border: 1px solid black;
+    font-size: 50px;
+}
+
+.fifty-vw {
+    width: 50vw;
+}
+
+.twenty-five-vh {
+    height: 25vh;
+}
+
+.one-em {
+    font-size: 1em;
+}
+
+.one-rem {
+    font-size: 1rem;
+}
+
+.two-em {
+    font-size: 2em;
+}
+
+.two-rem {
+    font-size: 2rem;
+}

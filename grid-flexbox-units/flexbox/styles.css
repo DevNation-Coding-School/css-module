@@ -1,0 +1,106 @@
+
+
+.container-1 {
+    /* empty initially */
+    /* 1. add display: flex */
+    display: flex; 
+
+    /* not the same height */
+    /* align-items: flex-start;
+    align-items: flex-end; */
+
+    /* align-items: default = stretch */
+    /* align-items: center */
+
+    /* add this flex-direction: vertical */
+    /* flex-direction: column; */
+
+}
+
+.container-1 div {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.box-1 {
+    /* empty initially */
+    /* 2. add three even boxes */
+    flex: 1;
+    /* if box one needs to be a little bigger. certain width, increment stops. Can be done with other boxes too */
+    /* flex: 2  */
+    order: 2
+
+}
+
+.box-2 {
+    /* empty initially */
+    flex: 2;
+
+    /* 3. change the order. */
+    order: 1
+}
+
+.box-3 {
+    /* empty initially */
+    flex: 3;
+    order: 3
+}
+
+.container-2 {
+    display: flex;
+    /* center everything */
+    justify-content: center;
+    /* spread across */
+    justify-content: space-between;
+    /* space even */
+    justify-content: space-evenly;
+}
+
+.container-2-box {
+    width: 20%;
+    /* better way to write: flex-basis */
+    flex-basis: 27%;
+}
+
+.container-2 div {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* By default, same height. */
+/* if want no same height: container-1 {align-items: flex-start} */
+
+/* Fix how it looks like on a smartphone */
+
+
+@media(max-width: 400px) {
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-2 {
+        display: flex;
+    }
+
+}
+
+/* elements wrap */
+/* add another div set */
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-3-box {
+    flex-basis: 15%;
+}
+
+
+.container-3 div {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+

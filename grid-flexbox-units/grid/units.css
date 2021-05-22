@@ -1,0 +1,72 @@
+body {
+    font-size: 30px;
+}
+
+.box {
+    background: red;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.fifty-percent {
+    width: 50%;
+    /* relative to the parent */
+}
+
+.one-hundred-pixels {
+    width: 100px;
+}
+
+.parent {
+    width: 135px;
+    border: 1px solid black;
+    font-size: 30px
+}
+
+.fifty-vw {
+    /* 1 vw is 1% the entire width of my screen */
+    /* relative to the entire screen */
+    width: 50vw;
+}
+
+.twenty-five-vh {
+    height: 25vh;
+}
+
+
+/* FONT */
+/* REM: relative to the root element */
+/* EM: relative to its parent */
+
+/* 1em = 1rem --> root is body */
+/* 1rem is always same but 1em depends on parent font-size */
+/* 2em is 2 times the size of our parent font size */
+
+.one-em {
+    font-size: 1em;
+}
+
+.one-rem {
+    font-size: 1rem;
+}
+
+.two-em {
+    font-size: 2em;
+}
+
+.two-rem {
+    font-size: 2rem;
+}
+
+.two-hundred-percent {
+    font-size: 200%;
+}
+
+.icon-container.large {
+    font-size: 30px
+}
+
+.em-icon {
+    width: 1em;
+    height: 1em;
+}
